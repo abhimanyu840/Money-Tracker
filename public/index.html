@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="baloo-bhai-font title">
+            Money Tracker
+        </h2>
+        <section class="main">
+            <div class="form">
+                <form action="/" method="post" id="moneyTrackerForm">
+                    <label for="category" class="lato-regular">Category</label>
+                    <select name="category" id="category" class="lato-regular">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                    <label for="amount" class="lato-regular">Amount</label>
+                    <input type="number" name="amount" id="amount" value="" class="lato-regular">
+                    <label for="info" class="lato-regular">Info</label>
+                    <input type="text" name="info" id="info" value="" class="lato-regular">
+                    <label for="date" class="lato-regular">Date</label>
+                    <input type="date" name="date" id="date" value="" class="lato-regular">
+                    <div class="line-break"></div>
+                    <div class="btn-div">
+                        <button type="submit" class="btn ubuntu-regular">Add</button>
+                    </div>
+                </form>
+            </div>
+            <div class="list">
+                <h2 class="baloo-bhai-font list-title">
+                    Expenses And Income
+                </h2>
+                <div class="table">
+                    <table class="roboto-regular">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Amount</th>
+                                <th>Info</th>
+                                <th>Date</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="category">Deposit</td>
+                                <td id="amount">6000</td>
+                                <td id="info">income</td>
+                                <td id="date">18/7/2003</td>
+                                <td>
+                                    <button type="button" class="ubuntu-regular table-btn">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total: </td>
+                                <td id="total">6000 </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
